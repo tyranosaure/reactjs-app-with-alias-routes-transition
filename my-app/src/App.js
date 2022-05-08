@@ -1,11 +1,13 @@
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <h1>Blank app</h1>
-    </div>
-  );
+import React from "react"
+import { AnimatedRoutes } from "@services/index"
+import { BrowserRouter } from "react-router-dom"
+import "./App.scss"
+export default function App() {
+	return (
+		<div className="app">
+			<BrowserRouter>
+				<AnimatedRoutes />
+			</BrowserRouter>
+		</div>
+	)
 }
-
-export default App;
